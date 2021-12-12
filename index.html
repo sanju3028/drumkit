@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Drum 🥁 Kit</h1>
+  <div class="set">
+    <button class="s drum">s</button>
+    <button class="e drum">e</button>
+    <button class="k drum">k</button>
+    <button class="h drum">h</button>
+    <button class="e drum">e</button>
+    <button class="r drum">r</button>
+    <button class="a drum">a</button>
+  </div>
+  <div class="alan-btn"></div>
+  <script type="text/javascript"
+ src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+  var alanBtnInstance = alanBtn({
+    key: "b7aa2b4a6889dc3cd34c56047f62ccda2e956eca572e1d8b807a3e2338fdd0dc/stage",
+    onCommand: function (commandData) {
+      if (commandData.command === "go:back") {
+        //call client code that will react on the received command
+      }
+    },
+    rootEl: document.getElementById("alan-btn"),
+  });
+</script>
+
+<script src="index.js" charset="utf-8"></script>
+
+<footer>
+  "Every gift from a friend is a wish for your happiness".
+</footer>
+</body>
+</html>
